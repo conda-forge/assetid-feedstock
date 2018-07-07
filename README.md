@@ -14,14 +14,15 @@ Summary: An ocean data asset ID parser developed and used by Axiom Data Science
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/assetid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/assetid-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/assetid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/assetid-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/assetid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/assetid-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/assetid-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/assetid-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/assetid/badges/version.svg)](https://anaconda.org/conda-forge/assetid)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/assetid/badges/downloads.svg)](https://anaconda.org/conda-forge/assetid)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-assetid-green.svg)](https://anaconda.org/conda-forge/assetid) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/assetid.svg)](https://anaconda.org/conda-forge/assetid) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/assetid.svg)](https://anaconda.org/conda-forge/assetid) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/assetid.svg)](https://anaconda.org/conda-forge/assetid) |
 
 Installing assetid
 ==================
