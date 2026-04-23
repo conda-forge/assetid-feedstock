@@ -1,6 +1,6 @@
 {% set name = "assetid" %}
 {% set version = "1.0.0" %}
-{% set build = 1 %}
+{% set build = 2 %}
 {% set hash = "dd81d75e589bd6702da0ec48d3b83414cddf109e7eee0c4eb03d7978c4106de0" %}
 
 package:
@@ -8,25 +8,27 @@ package:
   version: {{ version }}
 
 source:
-  fn: assetid-{{ version}}.tar.gz
+  fn: assetid-{{ version }}.tar.gz
   url: https://github.com/axiom-data-science/assetid/archive/{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
   noarch: python
   number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - assetid
     - assetid.tests
